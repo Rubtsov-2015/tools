@@ -1,6 +1,10 @@
-@media screen and (min-width: 671px) {
-	.header_search_form,
+@media screen and (min-width: 768px) {
 	header nav{
+		display: block!important;
+	}
+}
+@media screen and (min-width: 671px) {
+	.header_search_form{
 		display: block!important;
 	}
 }
@@ -619,9 +623,10 @@
 		height: 20px;
 	}
 	.top_arrow_carousel .slick-arrow{
-		width: 19px;
-		height: 14px;
-		z-index: 100;
+		bottom: calc(100% + 5px);
+	}
+	.top_arrow_carousel .slick-arrow:before{
+		font-size: 20px;
 	}
 	.brands_carousel_section{
 		margin: 0 0 5px;
@@ -641,7 +646,7 @@
 	.brands_carousel_section .slick-arrow{
 		bottom: auto;
 		top: 50%;
-		margin-top: -7px;
+		margin-top: -17px;
 	}
 	.view_all{
 		text-align: center;

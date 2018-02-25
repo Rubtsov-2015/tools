@@ -590,25 +590,35 @@
 					<div class="user_form_action_wrapper">
 						<h2 class="page_title">Регистрация</h2>
 						<form>
-							<label>
-								<span>ФИО*</span>
-								<input type="text">
-							</label>
-							<label>
-								<span>E-mail*</span>
-								<input type="text">
-							</label>
-							<label>
-								<span>Телефон</span>
-								<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
-							</label>
-							<label>
-								<i class="checkbox_holder">
-									<input type="checkbox">
-									<b></b>
-								</i>
-								<span>Подписаться на рассылку новостей</span>
-							</label>
+							<div class="input_holder error">
+								<label>
+									<span>ФИО*</span>
+									<input type="text">
+								</label>
+								<div class="input_message">ФИО введено неверно</div>
+							</div>
+							<div class="input_holder correct">
+								<label>
+									<span>E-mail*</span>
+									<input type="text">
+								</label>
+								<div class="input_message">E-mail введен верно</div>
+							</div>
+							<div class="input_holder">
+								<label>
+									<span>Телефон</span>
+									<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
+								</label>
+							</div>
+							<div class="input_holder">
+								<label>
+									<i class="checkbox_holder">
+										<input type="checkbox">
+										<b></b>
+									</i>
+									<span>Подписаться на рассылку новостей</span>
+								</label>
+							</div>
 							<div class="submit_holder">
 								<input type="submit" value="Зарегистрироваться">
 							</div>

@@ -17,6 +17,8 @@ $(document).ready(function(){
 	});
 	$('.products_carousel').slick({
 		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 1024,
