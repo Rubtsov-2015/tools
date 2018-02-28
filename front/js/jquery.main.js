@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	/* инициализация функций */
-	// mobile_menu_height();
+	$('.category_list li a').matchHeight();
+	$('.contacts_page_wrapper .contacts_list li').matchHeight();
 	/* описание функций */
 	$('.main_carousel').slick({
 		slidesToShow: 1,
@@ -64,18 +65,13 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('header .top_management a.lang_btn').click(function(){
+
+	$('header .top_management a.lang_btn').on('click', function(){
 		$(this).siblings('ul').toggleClass('open');
 		$(this).siblings('ul').hasClass('open') ? $(this).siblings('ul').slideDown(200) : $(this).siblings('ul').slideUp(300);
 		return false;
 	});
 
-	// function mobile_menu_height(){
-	// 	var minus_height = $('header nav .language_list').height() + $('header nav .main_menu').height() + $('.mobile_user_actions').height();
-	// 	console.log(minus_height)
-	// 	$('.addmenu_wrapper .addmenu_list').css('height','calc(100% - '+minus_height+')')
-	// }
-	
 
 });
 
