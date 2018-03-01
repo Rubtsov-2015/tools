@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	/* инициализация функций */
+	popUps();
+	
 	$('.category_list li a').matchHeight();
 	$('.contacts_page_wrapper .contacts_list li').matchHeight();
 	/* описание функций */
@@ -71,6 +73,18 @@ $(document).ready(function(){
 		$(this).siblings('ul').hasClass('open') ? $(this).siblings('ul').slideDown(200) : $(this).siblings('ul').slideUp(300);
 		return false;
 	});
+
+	function popUps(){
+		$('[data-popup]').on('click',function(){
+			var _popupUrl = $(this).data('popup');
+			$('.popup_holder').removeClass('active').filter(_popupUrl).addClass('active');
+			return false;
+		});
+		$('.popup_holder .bg,.popup_holder  .close_popup').on('click',function(){
+			$('.popup_holder').removeClass('active');
+			return false;
+		});
+	};
 
 
 });
