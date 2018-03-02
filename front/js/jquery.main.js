@@ -1,7 +1,14 @@
 $(document).ready(function(){
 	/* инициализация функций */
 	popUps();
-	
+
+	$(".range_price_slider").slider({
+		range: true,
+		min: 0,
+		max: 999,
+		values: [ 75, 300 ]
+	});
+
 	$('.category_list li a').matchHeight();
 	$('.contacts_page_wrapper .contacts_list li').matchHeight();
 	/* описание функций */

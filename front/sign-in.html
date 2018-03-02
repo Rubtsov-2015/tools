@@ -653,8 +653,8 @@
 							<p><a href="tel:0632614475">063-261-44-75</a></p>
 						</li>
 						<li>
-							<p><a href="#"><i class="icon-telephone"></i><span>Звонок Вам</span></a></p>
-							<p><a href="#"><i class="icon-e-mail-envelope"></i><span>Написать</span></a></p>
+							<p><a href="#" data-popup="#call_back_pop"><i class="icon-telephone"></i><span>Звонок Вам</span></a></p>
+							<p><a href="#" data-popup="#write_us_pop"><i class="icon-e-mail-envelope"></i><span>Написать</span></a></p>
 						</li>
 					</ul>
 					<ul class="social_list">
@@ -667,8 +667,67 @@
 				</div>
 			</footer>
 		</div>
+		<div class="popup_holder" id="call_back_pop">
+			<div class="bg">&nbsp;</div>
+			<div class="popup">
+				<div class="popup_title">
+					<h3>Обратная связь</h3>
+				</div>
+				<div class="popup_content">
+					<form class="popup_form">
+						<fieldset>
+							<div class="popup_input_holder">
+								<label>
+									<input type="text" placeholder="Имя">
+								</label>
+							</div>
+							<div class="popup_input_holder">
+								<label>
+									<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
+								</label>
+							</div>
+							<div class="popup_submit_holder">
+								<input type="submit" value="Перезвоните">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup_holder" id="write_us_pop">
+			<div class="bg">&nbsp;</div>
+			<div class="popup">
+				<div class="popup_title">
+					<h3>Обратная связь</h3>
+				</div>
+				<div class="popup_content">
+					<form class="popup_form">
+						<fieldset>
+							<div class="popup_input_holder">
+								<label>
+									<input type="text" placeholder="Имя">
+								</label>
+							</div>
+							<div class="popup_input_holder">
+								<label>
+									<input type="text" placeholder="Email">
+								</label>
+							</div>
+							<div class="popup_textarea_holder">
+								<textarea rows="5" placeholder="Сообщение"></textarea>
+							</div>
+							<div class="popup_submit_holder">
+								<input type="submit" value="Отправить">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/jquery.matchHeight-min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jQuery.UI.Touch.Punch.0.2.3.js"></script>
 		<script src="js/masked-input.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/jquery.main.js"></script>
