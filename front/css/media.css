@@ -35,8 +35,8 @@
 	.products_carousel li.max_variable_slide .visual{
 		display: block;
 	}
-	.products_carousel .price_holder,
-	.products_carousel h3{
+	.products_holder .price_holder,
+	.products_holder h3{
 		padding: 0;
 	}
 	.products_carousel li.max_variable_slide h3{
@@ -702,46 +702,46 @@
 		margin: 0 -10px 5px;
 	}
 	.products_carousel li.max_variable_slide h3,
-	.products_carousel h3{
+	.products_holder h3{
 		font-size: 12px;
 		line-height: 14px;
 		margin: 0;
 	}
-	.products_carousel li .visual{
+	.products_holder .visual{
 		padding: 0 15px;
 	}
-	.products_carousel .price_holder b,
-	.products_carousel .price_holder span i{
+	.products_holder .price_holder b,
+	.products_holder .price_holder span i{
 		font-size: 10px;
 		line-height: 12px;
 	}
-	.products_carousel .price_holder span{
+	.products_holder .price_holder span{
 		font-size: 16px;
 		line-height: 18px;
 	}
-	.products_carousel .actions_holder a.change{
+	.products_holder .actions_holder a.change{
 		font-size: 15px;
 	}
-	.products_carousel .actions_holder a.buy{
+	.products_holder .actions_holder a.buy{
 		font-size: 12px;
 		line-height: 14px;
 		margin: 0 2px;
 		padding: 5px 15px;
 	}
-	.products_carousel li.max_variable_slide .products_carousel_holder{
+	.products_holder li.max_variable_slide .products_holder{
 		padding: 0;
 	}
 	.max_variable_holder{
 		padding-bottom: 90px;
 	}
-	.products_carousel li .products_carousel_holder{
+	.products_holder{
 		padding: 5px 5px 80px;
 	}
-	.products_carousel li.max_variable_slide .price_holder,
-	.products_carousel .price_holder{
+	.products_holder li.max_variable_slide .price_holder,
+	.products_holder .price_holder{
 		margin: 0 0 7px;
 	}
-	.products_carousel .actions_holder{
+	.products_holder .actions_holder{
 		padding: 0;
 	}
 	.info_text_visual{

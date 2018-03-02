@@ -2,6 +2,10 @@ $(document).ready(function(){
 	/* инициализация функций */
 	popUps();
 
+	if($(window).width() > 990){
+		// $(".sticky").stick_in_parent();
+	}
+
 	$(".range_price_slider").slider({
 		range: true,
 		min: 0,
@@ -27,7 +31,7 @@ $(document).ready(function(){
 	});
 	$('.products_carousel').slick({
 		variableWidth: true,
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 4000,
 		responsive: [
 			{
