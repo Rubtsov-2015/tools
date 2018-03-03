@@ -93,6 +93,9 @@
 	.info_text_holder{
 		padding: 15px 20px;
 	}
+	footer .copy{
+		text-align: center;
+	}
 	footer .copy span{
 		float: none;
 		display: block;

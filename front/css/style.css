@@ -135,7 +135,7 @@ textarea:focus:-moz-placeholder           	{opacity: 0;}
 textarea:focus:-ms-input-placeholder      	{opacity: 0;}
 
 #wrapper{
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 	height: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -168,11 +168,10 @@ main{
 }
 header{
 	flex-shrink: 0;
-	overflow-x: hidden;
 }
 header .top_row{
-	/*margin: 0 -9999px;*/
-	padding: 3px 0;
+	margin: 0 -9999px;
+	padding: 3px 9999px;
 	background: #e1e1e1;
 }
 header .top_row:after{
@@ -519,8 +518,8 @@ header .top_management span{
 	line-height: 16px;
 }
 header nav{
-	/*margin: 0 -9999px;*/
-	padding: 14px 0 10px;
+	margin: 0 -9999px;
+	padding: 14px 9999px 10px;
 	border-top: 1px solid #c5c0c0;
 	border-bottom: 1px solid #c5c0c0;
 }
@@ -2470,7 +2469,7 @@ form .input_holder.correct .input_message{
 	resize: none;
 }
 .catalog_wrapper{
-	margin: 0 0 30px;
+	margin: 0 0 50px;
 }
 .catalog_products_wrapper{
 	display: table;
@@ -2834,7 +2833,7 @@ form .input_holder.correct .input_message{
 .catalog_products_list{
 	font-size: 0;
 	line-height: 0;
-	margin: 0 -10px 10px;
+	margin: 0 -10px 20px;
 }
 .catalog_products_list li{
 	display: inline-block;
@@ -2852,7 +2851,7 @@ form .input_holder.correct .input_message{
 .loadmore_catalog_btn a{
 	display: inline-block;
 	vertical-align: top;
-	padding: 10px 15px;
+	padding: 12px 20px;
 	border: 1px solid #2ea3b0;
 	font-size: 14px;
 	line-height: 16px;
