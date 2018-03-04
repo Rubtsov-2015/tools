@@ -2,9 +2,6 @@ $(document).ready(function(){
 	/* инициализация функций */
 	popUps();
 
-	if($(window).width() > 990){
-		// $(".sticky").stick_in_parent();
-	}
 
 	$(".range_price_slider").slider({
 		range: true,
@@ -15,6 +12,8 @@ $(document).ready(function(){
 
 	$('.category_list li a').matchHeight();
 	$('.contacts_page_wrapper .contacts_list li').matchHeight();
+	$('.catalog_products_list li .products_holder').matchHeight();
+
 	/* описание функций */
 	$('.main_carousel').slick({
 		slidesToShow: 1,
@@ -84,6 +83,32 @@ $(document).ready(function(){
 		$(this).siblings('ul').hasClass('open') ? $(this).siblings('ul').slideDown(200) : $(this).siblings('ul').slideUp(300);
 		return false;
 	});
+
+	$('.type_sort_view li').click(function(){
+		$('.type_sort_view li').removeClass('active');
+		$(this).addClass('active');
+		if($(this).hasClass('col')){
+			$('.catalog_products_list').removeClass('catalog_products_list_row');
+		}else{
+			$('.catalog_products_list').addClass('catalog_products_list_row');
+		}
+		$('.catalog_products_list li .products_holder').matchHeight();
+		return false;
+	});
+	$(document).on('click', function(e) {
+		if (!$(e.target).closest(".parameters_filter_holder.active").length && (!$(e.target).closest(".parameters_btn a").length)){
+			$('.parameters_filter_holder').removeClass('active');
+		}
+	});
+	$('.parameters_btn a').click(function(){
+		$('.parameters_filter_holder').toggleClass('active');
+	});
+
+	$('.type_sort_list_block .selected').click(function(){
+		$(this).toggleClass('active');
+		$(this).hasClass('active') ? $(this).next().slideDown() : $(this).next().slideUp();
+	});
+	
 
 	function popUps(){
 		$('[data-popup]').on('click',function(){
