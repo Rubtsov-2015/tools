@@ -1365,9 +1365,11 @@ header nav .language_list{
 	display: inline-block;
 	vertical-align: top;
 	color: #2ea3b0;
+	text-decoration: underline;
 }
 .view_all a:hover{
 	color: #2b82af;
+	text-decoration: none;
 }
 .info_text_section{
 	margin: 0 0 40px;
@@ -1406,6 +1408,7 @@ header nav .language_list{
 	text-decoration: underline;
 	font-size: 12px;
 	line-height: 14px;
+	color: #2ea3b0;
 }
 .info_text_holder .read_more a:hover{
 	text-decoration: none;
@@ -1679,6 +1682,7 @@ form .input_holder.correct .input_message{
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0;
+	font-size: 11px;
 }
 .user_form_action_wrapper form .checkbox_holder input{
 	position: absolute;
@@ -1865,6 +1869,9 @@ form .input_holder.correct .input_message{
 }
 .category_list li a:hover:after{
 	height: 100%;
+}
+.category_list li a:hover{
+	color: #2ea3b0;
 }
 .category_list li .visual{
 	margin: 0 0 20px;

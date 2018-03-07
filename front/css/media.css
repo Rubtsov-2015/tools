@@ -37,6 +37,14 @@
 	}
 }
 @media screen and (max-width: 1023px) {
+	.products_carousel li .products_holder,
+	.products_carousel li.max_variable_slide .products_holder{
+		padding: 10px 10px 0;
+	}
+	.products_carousel li.max_variable_slide .max_variable_holder,
+	.products_carousel li .products_holder{
+		padding-bottom: 95px;
+	}
 	.products_carousel li.max_variable_slide .max_variable_visual{
 		display: none;
 	}
