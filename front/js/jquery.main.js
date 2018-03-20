@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	/* инициализация функций */
 	popUps();
@@ -125,4 +126,17 @@ $(document).ready(function(){
 
 });
 
-/* подключение плагинов */
+(function($) {
+    $(function() {
+
+        $('ul.tabset').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tab-holder').find('div.tab-content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+    });
+})(jQuery);
+
+
+
