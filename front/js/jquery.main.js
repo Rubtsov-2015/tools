@@ -2,13 +2,37 @@
 $(document).ready(function(){
 	/* инициализация функций */
 	popUps();
+	if($(window).width() > 500){
+		catalog_mob(300);
+	}else{
+		catalog_mob(150);
+	}
 
+	$(window).resize(function(){
+		if($(window).width() > 500){
+			catalog_mob(300);
+		}else{
+			catalog_mob(150);
+		}
+	});
+
+	$('.exit_popup li.exit_account a').click(function(){
+		$('.popup_holder .bg, .popup_holder .close_popup').click();
+	});
 
 	$(".range_price_slider").slider({
 		range: true,
 		min: 0,
 		max: 999,
 		values: [ 75, 300 ]
+	});
+
+	$('.history_orders_list>li .short_description_more').click(function(){
+		var parent = $(this).closest('li');
+		parent.toggleClass('active');
+		parent.hasClass('active') ? parent.children('ul').slideDown() : parent.children('ul').slideUp();
+
+		return false;
 	});
 
 	$('.category_list li a').matchHeight();
@@ -55,6 +79,26 @@ $(document).ready(function(){
 			}
 		]
 	});
+
+	function catalog_mob(td_width){
+		var countTd = $('.catalog_mob_wrapper table tr:first-child td').length;
+		$('.catalog_mob_wrapper table').css('width', countTd * td_width);
+
+		$('.catalog_mob_wrapper table td').css('width', td_width);
+
+		$('.catalog_mob_wrapper table tr.title').each(function(){
+			$(this).find('td').attr('colspan', countTd)
+		});
+
+		$(".catalog_mob_wrapper").scroll(function(){
+			$(this).find('tr.title td i').css('padding-left', $(this).scrollLeft())
+		});
+	}
+
+
+	
+
+
 
 	$(".phone").mask("+38 - (999)-999-99-99",{
 		placeholder: "_"
@@ -117,11 +161,24 @@ $(document).ready(function(){
 			$('.popup_holder').removeClass('active').filter(_popupUrl).addClass('active');
 			return false;
 		});
-		$('.popup_holder .bg,.popup_holder  .close_popup').on('click',function(){
+		$('.popup_holder .bg, .popup_holder .close_popup').on('click',function(){
 			$('.popup_holder').removeClass('active');
 			return false;
 		});
 	};
+
+	$('.personal_office_nav li').click(function(){
+		var _this = $(this);
+		var this_data = $(this).data('tab-name') || 1;
+		$('.personal_office_tabs_holder .personal_office_tab').each(function(){
+			if($(this).data('tab-office') == this_data){
+				$('.personal_office_tabs_holder .personal_office_tab, .personal_office_nav li').removeClass('active');
+				$(this).addClass('active');
+				_this.addClass('active');
+			}
+		});
+	});
+
 
 
 });

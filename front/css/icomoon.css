@@ -54,13 +54,13 @@
 .icon-exchange:before {
   content: "\e907";
 }
-.icon-list-(1):before {
+.icon-list:before {
   content: "\e908";
 }
 .icon-logout:before {
   content: "\e909";
 }
-.icon-percentage-(1):before {
+.icon-percentage:before {
   content: "\e90a";
 }
 .icon-shopping-cart-of-checkered-design:before {
