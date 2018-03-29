@@ -608,88 +608,72 @@
 			<div class="ordering_wrapper">
 				<h2 class="page_title">Оформление заказа</h2>
 				<div class="final_order_list_holder">
-					<div class="final_order_title">Ваш заказ</div>
-					<ul>
-						<li>
-							<a href="#" class="visual"><img src="images/drill-1.jpg" alt="" width="166" height="109"></a>
-							<div class="final_order_info">
-								<div class="name">Дрель безударная Makita M 6501</div>
-								<div class="vendor_code">Модель: М6501</div>
-								<div class="price_count_holder">
-									<div class="count_holder">
-										<span>Количество:</span>
-										<div class="count_prod">
-											<a href="#" class="less"></a>
-											<a href="#" class="more"></a>
-											<i>1</i>
+					<form>
+						<div class="final_order_title">Ваш заказ</div>
+						<ul>
+							<li>
+								<a href="#" class="visual"><img src="images/drill-1.jpg" alt="" width="166" height="109"></a>
+								<div class="final_order_info">
+									<div class="name">Дрель безударная Makita M 6501</div>
+									<div class="vendor_code">Модель: М6501</div>
+									<div class="price_count_holder">
+										<div class="count_holder">
+											<span>Количество:</span>
+											<div class="count_prod">
+												<a href="#" class="less"></a>
+												<a href="#" class="more"></a>
+												<i>1</i>
+											</div>
+										</div>
+										<div class="price_holder">
+											<span class="price_prod"><i>1183</i> грн</span>
 										</div>
 									</div>
-									<div class="price_holder">
-										<span class="price_prod"><i>1183</i> грн</span>
-									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<a href="#" class="visual"><img src="images/drill-1.jpg" alt="" width="166" height="109"></a>
-							<div class="final_order_info">
-								<div class="name">Дрель безударная Makita M 6501</div>
-								<div class="vendor_code">Модель: М6501</div>
-								<div class="price_count_holder">
-									<div class="count_holder">
-										<span>Количество:</span>
-										<div class="count_prod">
-											<a href="#" class="less"></a>
-											<a href="#" class="more"></a>
-											<i>1</i>
+							</li>
+							<li>
+								<a href="#" class="visual"><img src="images/drill-1.jpg" alt="" width="166" height="109"></a>
+								<div class="final_order_info">
+									<div class="name">Дрель безударная Makita M 6501</div>
+									<div class="vendor_code">Модель: М6501</div>
+									<div class="price_count_holder">
+										<div class="count_holder">
+											<span>Количество:</span>
+											<div class="count_prod">
+												<a href="#" class="less"></a>
+												<a href="#" class="more"></a>
+												<i>1</i>
+											</div>
+										</div>
+										<div class="price_holder">
+											<span class="price_prod"><i>1183</i> грн</span>
 										</div>
 									</div>
-									<div class="price_holder">
-										<span class="price_prod"><i>1183</i> грн</span>
-									</div>
 								</div>
-							</div>
-						</li>
-					</ul>
-					<div class="final_order_fullsumm">
-						<p>
-							<span>Сумма заказа:</span>
+							</li>
+						</ul>
+						<div class="final_order_fullsumm">
+							<p>
+								<span>Сумма заказа:</span>
+								<span class="price_prod"><i>1183</i> грн</span>
+							</p>
+						</div>
+						<div class="final_order_fullsumm final_fullsumm">
+							<span>Итого:</span>
 							<span class="price_prod"><i>1183</i> грн</span>
-						</p>
-					</div>
-					<div class="final_order_fullsumm final_fullsumm">
-						<span>Итого:</span>
-						<span class="price_prod"><i>1183</i> грн</span>
-					</div>
+						</div>
+						<input type="submit" hidden class="final_order_submit">
+					</form>
 				</div>
 				<div class="order_forms_wrapper">
 					<div class="order_form_holder">
 						<div class="order_block_title"><span class="visual"><img src="images/ico01.png" alt="" width="24" height="32"></span>Информация о получателе</div>
 						<ul class="order_tab_nav">
-							<li><a href="#">Новый покупатель</a></li>
+							<li class="active"><a href="#">Новый покупатель</a></li>
 							<li><a href="#">Зарегестрированный пользователь</a></li>
 						</ul>
-						<div class="order_form_block">
+						<div class="order_form_block order_tab active">
 							<form>
-								<!-- <div class="select_type_block">
-									<div class="radiolist_input_holder">
-										<div class="radiolist_input">
-											<input type="radio" id="subscribe-1" name="subscribe">
-											<span></span>
-											<label for="subscribe-1"></label>
-										</div>
-										<label for="subscribe-1">Регистрация</label>
-									</div>
-									<div class="radiolist_input_holder">
-										<div class="radiolist_input">
-											<input type="radio" id="subscribe-2" name="subscribe">
-											<span></span>
-											<label for="subscribe-2"></label>
-										</div>
-										<label for="subscribe-2">Оформить без регистрации</label>
-									</div>
-
-								</div> -->
 								<div class="input_holder">
 									<label>
 										<span>ФИО*</span>
@@ -710,57 +694,98 @@
 								</div>
 							</form>
 						</div>
-						<div class="order_form_block">
+						<div class="order_form_block order_tab">
 							<form>
-								<div class="input_holder">
-									<label>
-										<span>Телефон</span>
-										<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
-									</label>
+								<div class="inputs_block">
+									<div class="input_holder input_holder_half">
+										<label>
+											<span>E-mail</span>
+											<input type="text">
+										</label>
+									</div>
+									<div class="input_holder input_holder_half">
+										<label>
+											<span>Пароль</span>
+											<input type="password">
+										</label>
+									</div>
 								</div>
-								<div class="input_holder">
-									<label>
-										<span>Пароль</span>
-										<input type="password">
-									</label>
+								<div class="enter_input_holder">
+									<a href="#" class="forgot_pass">Забыли пароль?</a>
+									<div class="submit_holder"><input type="submit" value="Войти"></div>
 								</div>
 							</form>
 						</div>
 					</div>
-					<div class="order_form_holder">
+					<div class="order_form_holder open">
 						<div class="order_block_title"><span class="visual"><img src="images/ico02.png" alt="" width="39" height="33"></span>Доставка</div>
 						<div class="order_form_block">
 							<form>
 								<div class="select_type_block">
 									<div class="radiolist_input_holder">
 										<div class="radiolist_input">
-											<input type="radio" id="subscribe-1" name="subscribe">
+											<input type="radio" id="">
 											<span></span>
-											<label for="subscribe-1"></label>
+											<label for=""></label>
 										</div>
-										<label for="subscribe-1">Службой доставки по Украине по тарифам перевозчика </label>
+										<label for="">Службой доставки по Украине по тарифам перевозчика </label>
 									</div>
 									<div class="radiolist_input_holder">
 										<div class="radiolist_input">
-											<input type="radio" id="subscribe-2" name="subscribe">
+											<input type="radio" id="">
 											<span></span>
-											<label for="subscribe-2"></label>
+											<label for=""></label>
 										</div>
-										<label for="subscribe-2">Курьерской службой по Киеву (50 гр)</label>
+										<label for="">Курьерской службой по Киеву (50 гр)</label>
 									</div>
-
 								</div>
-								<div class="input_holder">
+								<div class="inputs_block">
+									<div class="input_holder input_holder_half">
+										<label>
+											<span>Адрес</span>
+											<input type="text">
+										</label>
+									</div>
+									<div class="input_holder input_holder_half">
+										<label>
+											<span>Дом, квартира</span>
+											<input type="text">
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="order_form_holder open">
+						<div class="order_block_title"><span class="visual"><img src="images/ico03.png" alt="" width="32" height="32"></span>Информация об оплате</div>
+						<div class="order_form_block">
+							<form>
+								<div class="select_type_block">
+									<div class="radiolist_input_holder">
+										<div class="radiolist_input">
+											<input type="radio" id="">
+											<span></span>
+											<label for=""></label>
+										</div>
+										<label for="">Оплата при доставке</label>
+									</div>
+									<div class="radiolist_input_holder">
+										<div class="radiolist_input">
+											<input type="radio" id="">
+											<span></span>
+											<label for=""></label>
+										</div>
+										<label for="">Оплата на карту или счет</label>
+									</div>
+								</div>
+								<div class="input_holder textarea_holder">
 									<label>
-										<span>ФИО*</span>
-										<input type="text">
+										<span>Комментарии к заказу</span>
+										<textarea rows="4"></textarea>
 									</label>
 								</div>
-								<div class="input_holder">
-									<label>
-										<span>Телефон</span>
-										<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
-									</label>
+								<div class="trigger_input_holder">
+									<a href="#" class="trigger_submit_btn">Оформить заказ</a>
 								</div>
 							</form>
 						</div>

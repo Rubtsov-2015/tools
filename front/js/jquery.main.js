@@ -97,6 +97,17 @@ $(document).ready(function(){
 
 
 	
+	$('.order_tab_nav li').click(function(){
+		var index = $(this).index();
+
+		$('.order_tab, .order_tab_nav li').removeClass('active');
+		$(this).addClass('active');
+		$('.order_tab').eq(index).addClass('active');
+	});
+	$('.trigger_submit_btn').click(function(){
+		$('.final_order_submit').trigger('click');
+		return false;
+	});
 
 
 

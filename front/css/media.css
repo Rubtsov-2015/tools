@@ -138,7 +138,20 @@
 	.compare_mob_form{
 		display: block;
 	}
-
+	.thanks_order_holder{
+		float: none;
+		display: block;
+		width: auto;
+		max-width: none;
+	}
+	.thanks_questions_holder{
+		max-width: 450px;
+		margin: 0 auto 20px;
+		padding: 0;
+	}
+	.thanks_questions_holder>p{
+		text-align: center;
+	}
 }
 @media screen and (max-width: 959px) {
 	.addmenu_list>li>ul>li>ul{
@@ -167,6 +180,43 @@
 		display: block;
 		text-align: center;
 		padding: 5px 0 0;
+	}
+	.final_order_list_holder{
+		display: block;
+		width: auto;
+		float: none;
+	}
+	.order_forms_wrapper{
+		padding: 0;
+		margin: 0;
+	}
+	.order_forms_wrapper .input_holder.input_holder_half{
+		width: auto;
+		display: block;
+	}
+	.order_forms_wrapper .input_holder.input_holder_half:nth-child(2n){
+		padding-left: 0;
+	}
+	.order_forms_wrapper .order_form_block .enter_input_holder{
+		display: block;
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+	.trigger_input_holder a{
+		max-width: none;
+		width: auto;
+	}
+	.order_forms_wrapper .order_form_holder{
+		border: 1px solid #e1e1e1;
+		padding: 15px 10px;
+		margin: 0 0 15px;
+	}
+	.order_forms_wrapper .order_form_block .select_type_block{
+		padding: 0;
+	}
+	.final_order_list_holder .final_order_fullsumm.final_fullsumm{
+		text-align: right;
 	}
 }
 @media screen and (max-width: 900px) {
@@ -860,6 +910,94 @@
 	.history_orders_list>li>ul>li .visual{
 		margin-right: 5px;
 	}
+	.history_orders_list>li>ul>li .visual{
+		margin-top: 0;
+	}
+	.history_orders_list>li>ul>li{
+		padding: 20px 20px 15px;
+	}
+	.thanks_order_holder .orders_list_block{
+		display: block;
+		border-bottom: none;
+	}
+	.thanks_order_holder .orders_list_block .row{
+		display: block;
+		padding: 10px 15px 10px 150px;
+	}
+	.thanks_order_holder .orders_list_block .row.titles_row{
+		padding: 10px 15px;
+	}
+	.thanks_order_holder .orders_list_block .row.titles_row>*{
+		display: none;
+	}
+	.thanks_order_holder .orders_list_block .row.titles_row .order_numb{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	.thanks_order_holder .orders_list_block .row .visual{
+		width: 140px;
+		position: absolute;
+		left: 5px;
+		top: 10px;
+	}
+	.thanks_order_holder .orders_list_block .row>*{
+		display: block;
+		text-align: left;
+		overflow: hidden;
+		padding: 0;
+		margin: 0 0 5px;
+	}
+	.thanks_order_holder .orders_list_block .row>*>span{
+		display: inline;
+	}
+	.thanks_order_holder .orders_list_block .row .prod_count,
+	.thanks_order_holder .orders_list_block .row .prod_price{
+		text-align: left;
+	}
+	.thanks_order_holder .orders_list_block .row .name{
+		margin: 0 0 15px;
+	}
+	.thanks_order_holder .conclusion_order{
+		display: block;
+	}
+	.thanks_order_holder .conclusion_order .row{
+		display: block;
+	}
+	.thanks_order_holder .conclusion_order .row .row_content{
+		display: block;
+		text-align: center;
+	}
+	.thanks_order_holder .conclusion_order .row.delivery_row{
+		position: relative;
+		padding: 45px 0 0;
+	}
+	.thanks_order_holder .conclusion_order .row.delivery_row .row_title{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 50%;
+	}
+	.thanks_order_holder .conclusion_order .row.delivery_row .row_val{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 50%;
+	}
+	.thanks_order_holder .conclusion_order .row.conclusion_holder{
+		text-align: center;
+	}
+	.thanks_order_holder .conclusion_order .row.conclusion_holder>*{
+		display: inline-block;
+		vertical-align: bottom;
+		width: auto;
+	}
+	.thanks_order_holder .conclusion_order .row>*{
+		padding: 10px 15px;
+	}
+	.thanks_order_holder .conclusion_order .row.conclusion_holder .row_content{
+		display: none;
+	}
 }
 @media screen and (max-width: 500px) {
 	header{
@@ -1232,6 +1370,27 @@
 	}
 	.personal_office_wrapper{
 		padding: 0;
+	}
+	.order_tab_nav li a{
+		font-size: 13px;
+		line-height: 16px;
+		padding: 4px 6px;
+	}
+	.final_order_list_holder ul li{
+		padding: 15px 10px;
+	}
+	.final_order_list_holder ul li .final_order_info .price_holder{
+		text-align: left;
+	}
+	.thanks_order_holder .orders_list_block .row .visual{
+		width: 90px;
+	}
+	.thanks_order_holder .orders_list_block .row{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.thanks_order_holder .orders_list_block .row{
+		padding: 10px 15px 10px 100px;
 	}
 }
 @media screen and (max-width: 400px) {
