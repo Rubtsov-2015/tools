@@ -200,17 +200,109 @@ $(document).ready(function(){
 
 });
 
-(function($) {
-    $(function() {
+if($(window).width > 767){
+    (function($) {
+        $(function() {
 
-        $('ul.tabset').on('click', 'li:not(.active)', function() {
-            $(this)
-                .addClass('active').siblings().removeClass('active')
-                .closest('div.tab-holder').find('div.tab-content').removeClass('active').eq($(this).index()).addClass('active');
+            $('ul.tabset').on('click', 'li:not(.active)', function() {
+                $(this)
+                    .addClass('active').siblings().removeClass('active')
+                    .closest('div.tab-holder').find('div.tab-content').removeClass('active').eq($(this).index()).addClass('active');
+            });
+
         });
+    })(jQuery);
+}
 
+if($(window).width < 768){
+    // page init
+    jQuery(function(){
+        initAccordion();
     });
-})(jQuery);
 
+// accordion menu init
+    function initAccordion() {
+        jQuery('.tab-holder').slideAccordion({
+            opener: '>a.opener',
+            slider: '>div.slide',
+            animSpeed: 300,
+            buttons: '.btns'
+        });
+    }
 
+    /*
+     * jQuery Accordion plugin
+     */
+    ;(function($){
+        $.fn.slideAccordion = function(opt){
+            // default options
+            var options = $.extend({
+                addClassBeforeAnimation: false,
+                activeClass:'active',
+                opener:'.opener',
+                slider:'.slide',
+                animSpeed: 300,
+                collapsible:true,
+                event:'click'
+            },opt);
 
+            return this.each(function(){
+                // options
+                var accordion = $(this);
+                var items = accordion.find(':has('+options.slider+')');
+
+                items.each(function(){
+                    var item = $(this);
+                    var opener = item.find(options.opener);
+                    var slider = item.find(options.slider);
+
+                    opener.bind(options.event, function(e){
+                        if(!slider.is(':animated')) {
+                            if(item.hasClass(options.activeClass)) {
+                                if(options.collapsible) {
+                                    bindButton(-1);
+                                    slider.slideUp(options.animSpeed, function(){
+                                        hideSlide(slider);
+                                        item.removeClass(options.activeClass);
+                                    });
+                                }
+                            } else {
+                                // show active
+                                var levelItems = item.siblings('.'+options.activeClass);
+                                var sliderElements = levelItems.find(options.slider);
+                                item.addClass(options.activeClass);
+                                showSlide(slider).hide().slideDown(options.animSpeed);
+
+                                // collapse others
+                                bindButton(1)
+                                sliderElements.slideUp(options.animSpeed, function(){
+                                    levelItems.removeClass(options.activeClass);
+                                    hideSlide(sliderElements);
+                                });
+                            }
+                        }
+                        e.preventDefault();
+                    });
+                    if(item.hasClass(options.activeClass)) showSlide(slider); else hideSlide(slider);
+                });
+                if(options.buttons) var buttons = jQuery(options.buttons);
+
+                function bindButton(index) {
+                    index == -1 ? buttons.slideDown(options.animSpeed) :  buttons.slideUp(options.animSpeed);
+                }
+                if(options.buttons) {
+                    var index = items.filter('.' + options.activeClass).length > 0 ? 1 : -1;
+                    bindButton(index)
+                }
+            });
+        };
+
+        // accordion slide visibility
+        var showSlide = function(slide) {
+            return slide.css({position:'', top: '', left: '', width: '' });
+        };
+        var hideSlide = function(slide) {
+            return slide.show().css({position:'absolute', top: -9999, left: -9999, width: slide.width() });
+        };
+    }(jQuery));
+}

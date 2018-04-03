@@ -572,6 +572,22 @@
 		float: none;
 		padding: 0 0 20px;
 	}
+	.tab-holder{
+		border-bottom: 1px solid #e1e1e1;
+		margin: 0 -10px 20px;
+		min-height: 0;
+	}
+	.tab-holder .tab-content{
+		display: block;}
+	.tab-holder .slide{
+		margin: 0 10px;
+	}
+	.tab-holder .tabset{
+		display: none;
+	}
+	.tab-holder .tab-content a.opener{
+		display: block;
+	}
 	ul.description-list{
 		display: none;}
 	ul.action-list{

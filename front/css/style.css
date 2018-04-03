@@ -3590,6 +3590,50 @@ ul.action-list a:hover svg[data-prefix="fas"]{display: inline;}
 .tab-holder .tab-content.active{
 	display: block;
 }
+.tab-holder .tab-content a.opener{
+	display: none;
+	position: relative;
+	color: #626262;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 6px 10px;
+	text-align: center;
+	border-top: 1px solid #e1e1e1;
+}
+.tab-holder .tab-content a.opener:after{
+	position: absolute;
+	top: 10px;
+	content: ' ';
+	width: 7px;
+	height: 7px;
+	border: 1px solid #2fa3b0;
+	border-left: none;
+	border-top: none;
+	font-size: 0;
+	line-height: 0;
+	background: none;
+	z-index: 100;
+	cursor: pointer;
+	padding: 0;
+	margin: 0 0 0 10px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.tab-holder .tab-content.active a.opener:after{
+	-webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
 .tab-holder ul.product-list{
 	position: relative;
 }
