@@ -657,6 +657,10 @@
 								<span>Сумма заказа:</span>
 								<span class="price_prod"><i>1183</i> грн</span>
 							</p>
+							<p>
+								<span>Стоимость доставки:</span>
+								<span class="price_prod"><i>1183</i> грн</span>
+							</p>
 						</div>
 						<div class="final_order_fullsumm final_fullsumm">
 							<span>Итого:</span>
@@ -673,26 +677,78 @@
 							<li><a href="#">Зарегестрированный пользователь</a></li>
 						</ul>
 						<div class="order_form_block order_tab active">
-							<form>
-								<div class="input_holder">
-									<label>
-										<span>ФИО*</span>
-										<input type="text">
-									</label>
+							<div class="regist_tab_holder">
+								<div class="regist_tab">
+									<div class="radiolist_input_holder">
+										<div class="radiolist_input">
+											<input type="radio" id="regist_tab_1" name="regist_tab_inp" checked="checked">
+											<span></span>
+											<label for="regist_tab_1"></label>
+										</div>
+										<label for="regist_tab_1">Регистрация</label>
+									</div>
+									<div class="radiolist_input_holder">
+										<div class="radiolist_input">
+											<input type="radio" id="regist_tab_2" name="regist_tab_inp">
+											<span></span>
+											<label for="regist_tab_2"></label>
+										</div>
+										<label for="regist_tab_2">Оформить без регистрации</label>
+									</div>
 								</div>
-								<div class="input_holder">
-									<label>
-										<span>Телефон</span>
-										<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
-									</label>
-								</div>
-								<div class="input_holder">
-									<label>
-										<span>E-mail*</span>
-										<input type="text">
-									</label>
-								</div>
-							</form>
+								<form class="active">
+									<div class="input_holder">
+										<label>
+											<span>ФИО*</span>
+											<input type="text">
+										</label>
+									</div>
+									<div class="input_holder">
+										<label>
+											<span>Телефон</span>
+											<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
+										</label>
+									</div>
+									<div class="input_holder">
+										<label>
+											<span>E-mail*</span>
+											<input type="text">
+										</label>
+									</div>
+									<div class="input_holder">
+										<label>
+											<span>Пароль</span>
+											<input type="password">
+										</label>
+									</div>
+									<div class="input_holder">
+										<label>
+											<span>Подтвердите пароль</span>
+											<input type="password">
+										</label>
+									</div>
+								</form>
+								<form>
+									<div class="input_holder">
+										<label>
+											<span>ФИО*</span>
+											<input type="text">
+										</label>
+									</div>
+									<div class="input_holder">
+										<label>
+											<span>Телефон</span>
+											<input type="text" class="phone" placeholder="+38 - (___)-___-__-__">
+										</label>
+									</div>
+									<div class="input_holder">
+										<label>
+											<span>E-mail*</span>
+											<input type="text">
+										</label>
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="order_form_block order_tab">
 							<form>
@@ -752,6 +808,12 @@
 											<input type="text">
 										</label>
 									</div>
+								</div>
+								<div class="input_holder textarea_holder">
+									<label>
+										<span>Информация для адресной доставки</span>
+										<textarea rows="4"></textarea>
+									</label>
 								</div>
 							</form>
 						</div>

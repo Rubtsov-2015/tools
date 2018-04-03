@@ -4171,14 +4171,14 @@ ul.action-list a:hover svg[data-prefix="fas"]{display: inline;}
 			box-sizing: border-box;
 	
 }
-.personal_office_tab .personal_info_block label.half_width{
+.personal_office_tab .personal_info_block .half_width{
 	display: inline-block;
 	vertical-align: bottom;
 	width: calc(50% - 25px);
 	margin: 0 0 20px 25px;
 
 }
-.personal_office_tab .personal_info_block label.half_width:nth-child(2n){
+.personal_office_tab .personal_info_block .half_width:nth-child(2n){
 	margin: 0 25px 20px 0;
 }
 .personal_office_tab .save_btn{
@@ -4209,17 +4209,18 @@ ul.action-list a:hover svg[data-prefix="fas"]{display: inline;}
 	margin: 0 0 20px;
 	position: relative;
 }
-.personal_office_tab .personal_info_block .deliveries_address label{
+.personal_office_tab .personal_info_block .deliveries_address .input_holder{
 	display: inline-block;
 	vertical-align: bottom;
 	margin: 0;
+	padding: 0;
 }
-.personal_office_tab .personal_info_block .deliveries_address label:first-child{
+.personal_office_tab .personal_info_block .deliveries_address .input_holder:first-child{
 	width: 66.666%;
 }
-.personal_office_tab .personal_info_block .deliveries_address label:nth-child(2){
+.personal_office_tab .personal_info_block .deliveries_address .input_holder:nth-child(2){
 	width: 33.333%;
-	padding: 0 0 0 30px;
+	padding-left: 30px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
@@ -4233,7 +4234,7 @@ ul.action-list a:hover svg[data-prefix="fas"]{display: inline;}
 			box-sizing: border-box;
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 25px;
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -4745,6 +4746,7 @@ ul.action-list a:hover svg[data-prefix="fas"]{display: inline;}
 	font-size: 14px;
 	line-height: 16px;
 	display: block;
+	margin: 0 0 4px;
 }
 .order_forms_wrapper .input_holder.input_holder_half:nth-child(2n){
 	padding-left: 15px;
@@ -4962,4 +4964,22 @@ ul.action-list a:hover svg[data-prefix="fas"]{display: inline;}
 .thanks_questions_holder ul li p{
 	padding: 0 0 0 30px;
 	margin: 0;
+}
+.regist_tab{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.regist_tab .radiolist_input_holder{
+	margin: 0 10px 10px 0;
+}
+.regist_tab_holder form{
+	display: none;
+}
+.regist_tab_holder form.active{
+	display: block;
 }

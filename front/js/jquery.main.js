@@ -20,6 +20,12 @@ $(document).ready(function(){
 		$('.popup_holder .bg, .popup_holder .close_popup').click();
 	});
 
+	$('.regist_tab .radiolist_input_holder').click(function(){
+		var index = $(this).index();
+		$(this).closest('.regist_tab_holder').find('form').removeClass('active');
+		$(this).closest('.regist_tab_holder').find('form').eq(index).addClass('active');
+	});
+
 	$(".range_price_slider").slider({
 		range: true,
 		min: 0,

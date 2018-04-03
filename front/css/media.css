@@ -628,8 +628,8 @@
 		width: auto;
 		padding: 0;
 	}
-	.personal_office_tab .personal_info_block label.half_width,
-	.personal_office_tab .personal_info_block label.half_width:nth-child(2n){
+	.personal_office_tab .personal_info_block .half_width,
+	.personal_office_tab .personal_info_block .half_width:nth-child(2n){
 		width: auto;
 		display: block;
 		margin: 0 0 25px;
@@ -1391,6 +1391,26 @@
 	}
 	.thanks_order_holder .orders_list_block .row{
 		padding: 10px 15px 10px 100px;
+	}
+	.personal_office_tab .save_btn a{
+		display: block;
+	}
+	.order_forms_wrapper .order_form_block .enter_input_holder .submit_holder{
+		float: none;
+		display: block;
+	}
+	.order_forms_wrapper .order_form_block .enter_input_holder .submit_holder input{
+		display: block;
+		width: 100%;
+	}
+	.order_forms_wrapper .order_form_block .enter_input_holder .forgot_pass{
+		margin: 0 0 5px;
+	}
+	.order_forms_wrapper .order_block_title{
+		padding-left: 0;
+	}
+	.trigger_input_holder a{
+		display: block;
 	}
 }
 @media screen and (max-width: 400px) {
