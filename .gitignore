@@ -1,1 +1,38 @@
-front/images/Tools
+# Config and Htaccess Files
+/.htaccess
+/config.php
+/admin/config.php
+
+# Image Cache Files
+/image/cache/*
+/image/cache/index.html
+
+# System Cache Files
+/system/storage/cache/*
+/system/storage/cache/index.html
+
+# Templates Files
+/image/templates/*
+/image/templates/default.jpg
+
+# Download Files
+/system/storage/download/*
+/system/storage/download/index.html
+
+# Upload Files
+/system/storage/upload/*
+/system/storage/upload/index.html
+
+# Log Files
+/system/logs/*
+/system/storage/logs/*
+/system/storage/logs/index.html
+
+# Modification Files
+/system/storage/modification/*
+/system/storage/modification/index.html
+
+
+/nbproject/private/
+/nbproject
+.idea/*
